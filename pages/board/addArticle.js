@@ -16,6 +16,7 @@ const AddArticlePage = () => {
   }
   const onSubmit = e => {
     e.preventDefault()
+    alert('등록 되었습니다:'+JSON.stringify(article))
     dispatch(addArticleRequest(article))
   }
   return (

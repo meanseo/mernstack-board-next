@@ -5,7 +5,7 @@ export function Home(){
     return (
         <>
         <div className={style.body}>
-        <main className={style.main}>Hi. I'm Min Seo</main>
+        <main className={style.main}>Welcome to My Project</main>
         </div>
     </>
     )

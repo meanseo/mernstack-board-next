@@ -23,12 +23,14 @@ export function* addArticleSaga() {
 }
 function* add(action) {
     try{
+        console.log("핵심" + JSON.stringify(action))
        const response = yield call (addArticleAPI, action.payload)
        console.log("서버 다녀옴: "+JSON.stringify(response.data))
        const result = response.data
-        const listBoard = JSON.stringify(result)
-        localStorage.setItem("listBoard", listBoard)
+        const boardList = JSON.stringify(result)
+        localStorage.setItem("boardList", boardList)
        yield put({type: ADDARTICLE_SUCCESS, payload: response.data})
+       yield put(window.location.href= "/board/list")
     }catch(error){
         yield put({type: ADDARTICLE_FAILURE, payload: error.message})
     }
