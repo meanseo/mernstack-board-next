@@ -53,7 +53,7 @@ export function Nav() {
           noWrap
           sx={{ flex: 1 }}
         ><a href='/'>
-          Board
+          My Website
         </a>
         </Typography>
         <Typography
