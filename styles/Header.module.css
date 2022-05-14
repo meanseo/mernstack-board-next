@@ -1,0 +1,10 @@
+.body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #8357eb;
+    width: 100vw;
+  }
