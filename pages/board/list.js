@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
-import { BoardList } from '@/components/board/BoardList';
+import { List } from '@/components/board/List';
 
-const BoardListPage= () => {
+const ListPage= () => {
     const columns = ["name", "date", "title", "Subject"];
     const [data, setData] = useState([])
     useEffect(()=>{
@@ -11,7 +11,7 @@ const BoardListPage= () => {
         }).catch(err=>{})
     },[])
     return(
-    <BoardList columns={columns} colspan={4} data={data}/>
+    <List columns={columns} colspan={4} data={data} />
   )
 }
-export default BoardListPage
+export default ListPage

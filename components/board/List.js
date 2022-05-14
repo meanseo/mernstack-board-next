@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react"
 import tableStyles from "@/styles/Table.module.css"
 
-export function BoardList({ columns,colspan, data }){
+export function List({ columns,colspan, data }){
     return (
         <table className={tableStyles.table}>
         <thead>
