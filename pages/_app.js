@@ -4,7 +4,7 @@ import '@/styles/globals.css'
 import {Footer, Header, Nav} from "@/components";
 import { wrapper } from '@/modules/store'
 import withReduxSaga from 'next-redux-saga';
-const App = ({ Component, }) => {
+const App = ({ Component }) => {
   return <>
   <Header/>
   <Nav/>
